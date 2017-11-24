@@ -1,0 +1,20 @@
+{
+  "name": "angularjs_auth0_client_setup",
+  "version": "1.0.0",
+  "description": "authentication setup using auth0 with an Angular client app",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Maria Wong",
+  "license": "ISC",
+  "dependencies": {
+    "@uirouter/angularjs": "^1.0.11",
+    "angular": "^1.6.6",
+    "angular-auth0": "^2.0.0",
+    "angular-jwt": "^0.1.9",
+    "auth0-js": "^8.11.3",
+    "bootstrap": "^3.3.7",
+    "express": "^4.16.2"
+  }
+}

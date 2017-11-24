@@ -1,0 +1,25 @@
+<h4> Hello.</h4>
+<h4 ng-if="vm.auth.isAuthenticated()">
+    You are logged in!
+</h4>
+<h4 ng-if="!vm.auth.isAuthenticated()">
+  You are not logged in! Please <a ng-click="vm.auth.login()">Log In.</a> 
+</h4>
+
+</br>
+
+<!-- only shows message button if user is authenticated -->
+<button ng-if="vm.auth.isAuthenticated()" ng-click="vm.getDog()" class="btn btn-primary">
+	Favorite Dog
+</button>
+
+<!-- only shows message button if user is authenticated -->
+<button ng-if="vm.auth.isAuthenticated()" ng-click="vm.getCat()" class="btn btn-primary">
+	Favorite Cat
+</button>
+
+</br></br>
+
+<p ng-if="vm.favDog && vm.auth.isAuthenticated()" > {{ vm.favDog }} </p>
+
+<p ng-if="vm.favCat && vm.auth.isAuthenticated()"> {{ vm.favCat }} </p>

@@ -1,0 +1,33 @@
+<nav class="navbar navbar-default">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a href="#" class="navbar-brand"> AngularJS Auth0 </a>
+        </div>
+
+		<div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+            	<li> <a ui-sref="home"> Home </a> </li>
+
+                <!-- only shows profile if the user is authenticated -->
+                <li ng-if="vm.auth.isAuthenticated()"> 
+                    <!-- ui-sref binds this link to the profile state - clicking the link triggers the state transition -->
+                    <a ui-sref="profile"> Profile </a> 
+                </li>
+
+            	<!-- shows log in button only if user is not authenticated -->
+              	<li ng-if="!vm.auth.isAuthenticated()"> 
+                    <!-- when user clicks 'Log In' login function called from auth.service.js -->
+                    <!-- authService's login referenced with vm.auth because changed reference to authService in navbar directive -->
+                    <a ng-click="vm.auth.login()"> Log In </a> 
+                </li>
+
+                <!-- shows log out button only if user is authenticated -->
+             	<li ng-if="vm.auth.isAuthenticated()"> 
+                    <a ng-click="vm.auth.logout()"> Log Out </a> 
+                </li>
+            </ul>
+        </div>
+
+
+    </div>
+</nav>

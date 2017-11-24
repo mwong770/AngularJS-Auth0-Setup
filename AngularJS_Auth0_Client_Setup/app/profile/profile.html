@@ -1,0 +1,21 @@
+<div class="panel panel-default">
+
+	<div class="panel-heading">
+		<h3> Profile </h3>
+	</div>
+
+	<div ng-if="vm.profile.name" class="panel-body">
+		<img ng-src="{{ vm.profile.picture }}" alt="profile avatar">
+		<div> 
+			<br/>
+			<h4> Name: <strong> {{ vm.profile.name }} </strong> </h4>
+			<br/>
+			<h4> Nickname: <strong> {{ vm.profile.nickname }} </strong> </h4>
+		</div>
+	</div>
+
+	<div ng-if="!vm.profile.name">
+		<h4> You do not have a profile to display. </h4>
+	</div>
+
+</div>
