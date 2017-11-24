@@ -55,7 +55,7 @@ An AngularJS and Node.js application that sets up authentication with Auth0 and 
 
 ## <a name="configuration"></a> :bar_chart: Auth0 Configuration 
 
-* Make an accout with [Auth0](https://auth0.com/signup/) if you don't have one. 
+* Make an account with [Auth0](https://auth0.com/signup/) if you don't have one. 
 
 * Follow the instructions on the Auth0 website to create a client and an api.
 
