@@ -1,4 +1,4 @@
-(function() {
+ (function() {
 
 	//creates module called app with dependencies
 	angular.module('app', ['auth0.auth0', 'ui.router', 'angular-jwt'])

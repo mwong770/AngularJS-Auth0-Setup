@@ -23,6 +23,7 @@
 
                 <!-- shows log out button only if user is authenticated -->
              	<li ng-if="vm.auth.isAuthenticated()"> 
+                    <!-- removes user info from local storage and redirects to home page -->
                     <a ng-click="vm.auth.logout()"> Log Out </a> 
                 </li>
             </ul>

@@ -72,7 +72,10 @@
 			localStorage.removeItem('access_token');
 			localStorage.removeItem('id_token');
 			localStorage.removeItem('expires_at');
-			$state.go('/');
+			localStorage.removeItem('profile');
+			$timeout(function() {
+            	$state.go('home');
+          	});
 		}
 
 		//returns boolean indicating if access token has expired 
