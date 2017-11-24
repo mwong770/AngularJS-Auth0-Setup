@@ -76,9 +76,13 @@ An AngularJS and Node.js application that sets up authentication with Auth0 and 
 ## <a name="features"></a> :boom: Features
 
 * Users must login to see menu options.
+
 * Users can login to the app using Auth0 and Auth0's Lock.
+
 * If authenticated, users can click 'Profile' to see their picture, name, and nickname if obtained from Auth0.
+
 * If authenticated, users can click 'Favorite Dog' or 'Favorite Cat' to make a call to the server to get my favorite cat or dog breed.
+
 * If authenticated, users can 'Log Out' to go back to the index page and no longer view menu options.
 
 
