@@ -9,7 +9,7 @@ An AngularJS and Node.js application that sets up authentication with Auth0 and 
 
 [:dvd:  Installation](#installation)
 
-[:bar_chart:  MySQL Configuration](#configuration)
+[:bar_chart:  Configuration](#configuration)
 
 [:crystal_ball:  Usage](#usage)
 
