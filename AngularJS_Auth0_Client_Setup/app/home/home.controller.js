@@ -12,8 +12,6 @@
 		//need this in order to use vm.auth in home.html to confirm user is authenticated
 		vm.auth=authService;
 
-		vm.message = '';
-
 		// makes request to server to get data from /dog
 		vm.getDog = function() {
 			$http.get('http://localhost:8080/dog')
